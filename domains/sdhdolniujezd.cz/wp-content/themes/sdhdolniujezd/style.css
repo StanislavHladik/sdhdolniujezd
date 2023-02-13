@@ -1,0 +1,734 @@
+/*
+Theme Name: SDHDolniUjezd
+Author: Stanislav Hladík
+Author URL: www.stanislavhladik.cz
+Version: 1.0
+*/
+
+@font-face
+{
+    font-family: "Trajan Pro";
+    src: url("/css/fonts/Trajan Pro.ttf");
+    src:
+        url("/css/fonts/Trajan Pro-Bold.otf") format("otf"),
+        url("/css/fonts/Trajan Pro-Regular.ttf") format("ttf");
+}
+
+body
+{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0%;
+    background-color: rgba(23, 23, 23, 1);
+    //background-image: url('/wp-content/themes/sdhdolniujezd/images/background.jpg'); 
+    background-repeat: no-repeat;
+}
+
+header
+{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    //background-color: rgba(23, 23, 23, 0.9); 
+    background-image: url('/wp-content/themes/sdhdolniujezd/images/background.jpg');
+    color: white;
+    //padding-top: 2%;
+    position: sticky;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.search_bar
+{
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.search_bar a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.search_obrazek
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.div_search
+{
+    position: absolute;
+    width: 250px;
+    height: 75px;
+    background-image: url('/wp-content/themes/sdhdolniujezd/images/backgroundHover.jpg');
+    border: 1px solid white;
+    right: 5%;
+    display: none;
+    z-index: 3;
+}
+
+.div_search div
+{
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+/*
+.div_obrazek
+{
+    float: left;
+    width: 50%;
+}
+*/
+.nadpis_obrazek
+{
+    width: 60%;
+    height: 60%;
+}
+
+.nadpis
+{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+/*
+h1
+{
+    font-family: Arial Black;
+    font-size: 35px;
+    margin: 0;
+    // padding-bottom: 1%;
+    // margin-left: 2%;
+}
+
+h1 a
+{
+    text-decoration: none;
+    color: red;
+}
+*/
+
+
+// primary navigation menu
+body nav
+{
+    margin:0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    min-height: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-image: url('/wp-content/themes/sdhdolniujezd/images/background1.jpg');
+}
+
+.menu-primary-menu-links-container-nav
+{
+    position: sticky;
+    margin-bottom: 2%;
+    margin:0 auto;
+    //padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    max-width: 2000px;
+    margin:auto;
+    min-height: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-image: url('/wp-content/themes/sdhdolniujezd/images/background1.jpg');
+}
+/*
+.menu-primary-menu-links-container
+{
+    position: sticky;
+    margin-bottom: 2%;
+    margin:0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    max-width: 2000px;
+    margin:auto;
+    min-height: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-image: url('/wp-content/themes/sdhdolniujezd/images/background1.jpg');
+}
+*/
+
+.menu-primary-menu-links-container ul
+{
+    padding-left: 5px;
+}
+
+.menu-primary-menu-links-container ul li
+{
+
+    display: inline;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.menu-primary-menu-links-container ul li a
+{
+    //font-size: 1.7vw;
+    //font-size: 24px;
+    font-size: 110%;
+    font-weight: bold;
+    font-family: Trajan Pro;
+    text-decoration: none;
+    color:white;
+}
+
+.menu-primary-menu-links-container ul li:hover
+{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    //background-image: url('/wp-content/themes/sdhdolniujezd/images/backgroundHover.jpg');
+
+}
+
+.menu-primary-menu-links-container ul li ul
+{
+    display: none;
+    position: absolute;
+    color: black;
+    //background-image: url('/wp-content/themes/sdhdolniujezd/images/backgroundHover.jpg');
+    padding-left: 0;
+}
+
+.menu-primary-menu-links-container ul li ul li
+{
+    display: inherit;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.menu-primary-menu-links-container ul li ul li:hover
+{
+    background-color: orangered;
+}
+
+
+.container
+{
+    position: relative;
+    overflow: hidden;
+    //max-height: 200px;
+}
+
+video
+{
+}
+
+.container .content
+{
+    position: relative;
+    //top: 0;
+    //left: 0;
+    background-color: rgba(23, 23, 23, 0.9);
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    margin: auto;
+    max-width: 1600px;
+}
+
+.container .backgroundImageDiv
+{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.backgroundImageDiv img
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.backgroundImagePopis
+{
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    color: white;
+}
+
+.backgroundImagePopis p
+{
+    font-size: 20px;
+}
+
+.leftArrow
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    left: 2%;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-style: none;
+    cursor: grab;
+}
+
+.leftArrow:hover
+{
+    background-color: orangered;
+}
+
+.leftArrow:active
+{
+    background-color: orangered;
+}
+
+.leftArrow img
+{
+    height: 80%;
+    width: 80%;
+}
+
+.rightArrow
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    right: 2%;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-style: none;
+    cursor: grab;
+}
+
+.rightArrow:hover
+{
+    background-color: orangered;
+}
+
+.rightArrow:active
+{
+    background-color: orangered;
+}
+
+.rightArrow img
+{
+    height: 80%;
+    width: 80%;
+}
+
+.obsah
+{
+    position: relative;
+    //top: 0;
+    //left: 0;
+    background-color: rgba(23, 23, 23, 0.9);
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    height: 100%;
+    min-height: 500px;
+    color: white;
+}
+
+.obsah h2
+{
+    font-size: 30px;
+    text-align: center;
+    padding: 2%;
+}
+
+.member
+{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.member h2
+{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.member .post
+{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    width: 100%;
+}
+
+.member .post:hover
+{
+    //border-bottom: 0.2px solid white;
+    //border-top: 0.2px solid white;
+    //background-color: rgba(255, 69, 0, 0.8);
+
+    -moz-box-shadow:    inset  0  10px 10px -10px grey,
+        inset  0 -10px 10px -10px grey;
+    -webkit-box-shadow: inset  0  10px 10px -10px grey,
+        inset  0 -10px 10px -10px grey;
+    box-shadow:        inset  0  10px 10px -10px grey,
+        inset  0 -10px 10px -10px grey;
+}
+
+.member a
+{
+    text-decoration: none;
+}
+
+.post div
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.post .leftText p
+{
+    margin-left:10px;
+}
+
+.post .rightText
+{
+    margin-left: 2%;
+}
+
+.hideLeftText{
+    display: none;
+}
+
+.leftImage
+{
+    width:45% !important;
+    //margin-right:5%;
+    margin-left:10px;
+
+}
+
+.rightImage
+{
+    width:45% !important;
+    margin-left:4%;
+}
+
+.leftImage img
+{
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.rightImage img
+{
+    float: right;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+footer
+{
+    // background-color: rgba(23, 23, 23, 1); 
+    color: white;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 25px;
+    background-image: url('/wp-content/themes/sdhdolniujezd/images/background.jpg');
+    text-align: center;
+}
+
+footer p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-trigger{
+    display: none;
+}
+
+.menu-trigger{
+    color: white;
+    text-align: center;
+    padding : 10px;
+    font-size: 3vw;
+    background-image: url('/wp-content/themes/sdhdolniujezd/images/background1.jpg');
+}
+
+.menu-trigger label{
+    display: block;
+    width: 10%;
+    margin: auto;
+}
+
+/*
+.menu-trigger svg{
+    //background-image: url('/wp-content/themes/sdhdolniujezd/images/Hamburger_icon_bile.png');
+    width: 50px;
+    height: 40px;
+}
+*/
+
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.hamburger {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+/* HAMBURGER 1 */
+.checkbox1:checked + label > .hamburger1 > .bar1{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+}
+
+.page-numbers{
+    color: white;
+    padding: 5px;
+}
+
+.page-numbers:hover{
+    background-color: #df4b18;
+}
+
+.current{
+    background-color: #b71907;
+}
+
+.strankovani{
+    position: relative;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 1280px){
+
+    .container .backgroundImageDiv
+    {
+        height: 400px;
+        max-width: 1280px;
+    }
+
+    .menu-primary-menu-links-container-nav{
+        display: none;
+        position: relative;
+    }
+
+    header div
+    {
+        text-align:center;
+    }
+
+    .nadpis_obrazek
+    {
+        width: 70%;
+        height: 70%;
+    }
+
+    .menu-trigger{
+        display: block;
+    }
+
+    .menu-primary-menu-links-container ul li ul li
+    {
+        display: none;
+    }
+
+    .menu-primary-menu-links-container{
+        display: none;
+    }
+
+    .menu-primary-menu-links-container ul{
+        text-align: left;
+    }
+
+    .menu-primary-menu-links-container ul li{
+        display: block;
+        float: none;
+        padding: 6px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .menu-primary-menu-links-container ul li a{
+        display: block;
+        float: none;
+        font-size: 3vw;
+    }
+
+    @media screen and (max-width: 992px)
+    {
+        .nadpis_obrazek
+        {
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+    @media screen and (max-width: 768px)
+    {
+        .nadpis_obrazek
+        {
+            width: 90%;
+            height: 90%;
+        }
+    }
+
+    @media screen and (max-width: 480px){
+
+        .container .backgroundImageDiv
+        {
+            height: 200px;
+            max-width: 500px;
+        }
+
+        .nadpis_obrazek
+        {
+            width: 100%;
+            height: 100%;
+        }
+
+        .menu-trigger{
+            font-size: 5vw;
+        }
+
+        .menu-primary-menu-links-container ul li a{
+            display: block;
+            float: none;
+            font-size: 5vw;
+        }
+
+        .post{
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .post div{
+            width: 100%;
+        }
+
+        .hideLeftText{
+            display: block;
+        }
+
+        .rightText{
+            display:none;
+        }
+
+        .leftImage{
+            //display: none;
+            width: 100% !important;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        .rightImage{
+            //display: none;
+            width: 100% !important;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+    }
+
+    @media screen and (max-width: 320px){
+
+
+    }
+
+}
+
